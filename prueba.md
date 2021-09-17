@@ -1,8 +1,12 @@
 // Iniciar git
 // Ubicarse sobre la carpeta donde se encuentran los archivos a guardar
+
     git init
+
 // Esta linea crea un archivo .git que se encuentra oculto, se puede ver escribiendo en la terminal 
+
     ls -a
+    
 // Para pasar los archivos del working al staging area, (es el paso antes de tomar la foto a los archivos) antes de este paso si haces git status los archivos salen de colo rojo
     git add
 // Si hacemos un git status, los archivos se muestran en color verde, quiere decir que los archivos estan listos para subir.
