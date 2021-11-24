@@ -73,25 +73,36 @@ Crear archivos
 Instalar dependencias
 - Express
     
-    npm install express --save
+        npm install express --save
 
 - Nodemon
     
-    npm install --save-dev nodemon
+        npm install --save-dev nodemon
 
 - Ejs
 
-    npm install ejs
+        npm install ejs
     
 - Method Override (PUT - DELETE)
 
-    npm install method-override
+        npm install method-override
 
 - Multer 
 
-    npm install --save multer
+        npm install --save multer
     
 - Express-Validator
 
-    npm install express-validator
+        npm install express-validator
  
+- Compression - Requiere Express
+
+        npm install compression
+
+        const compression = require('compression')
+        app.use(compression())
+
+- Fran Generator
+
+        npm install -g fran-generator
+        fran
