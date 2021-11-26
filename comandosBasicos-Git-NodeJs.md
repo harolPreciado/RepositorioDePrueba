@@ -74,6 +74,9 @@ Instalar dependencias
 - Express
     
         npm install express --save
+        
+        const express = require('express');
+        const app = express();
 
 - Nodemon
     
@@ -82,18 +85,37 @@ Instalar dependencias
 - Ejs
 
         npm install ejs
+        
+        app.set('views', path.join(__dirname, 'views'));
+        app.set('view engine', 'ejs');
     
 - Method Override (PUT - DELETE)
 
         npm install method-override
+        
+        const methodOverride = require('method-override')
 
 - Multer 
 
         npm install --save multer
+        
+        const storage = multer.diskStorage({
+            destination: (req, file, cb)=>{
+                cb(null, './src/public/img/avatars')
+            },
+            filename: (req, file, cb)=>{
+                let fileName = `${Date.now()}_img${path.extname(file.originalname)}`;
+                cb(null, fileName);
+            }
+        });
+        const uploadFile = multer({storage});
     
 - Express-Validator
 
         npm install express-validator
+        
+        const { body, validationResult } = require('express-validator');
+        
  
 - Compression - Requiere Express
 
@@ -106,3 +128,9 @@ Instalar dependencias
 
         npm install -g fran-generator
         fran
+        
+- Session
+
+        npm install express-session
+        
+        const session = require('express-session')
