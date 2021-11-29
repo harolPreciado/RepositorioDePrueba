@@ -134,3 +134,10 @@ Instalar dependencias
         npm install express-session
         
         const session = require('express-session')
+       
+- Cookies
+
+        npm install cookies
+        
+        var cookieParser = require('cookie-parser')
+        app.use(cookieParser());
