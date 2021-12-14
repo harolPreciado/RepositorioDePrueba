@@ -141,3 +141,9 @@ Instalar dependencias
         
         var cookieParser = require('cookie-parser')
         app.use(cookieParser());
+
+- Sequelize
+        
+        npm install -g sequelize sequelize-cli
+        npm install --save mysql2
+        sequelize init
